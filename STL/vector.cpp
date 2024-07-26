@@ -1,7 +1,10 @@
 #include<iostream>
 #include<vector>
 #include<iterator>
+<<<<<<< HEAD
 #include<list>
+=======
+>>>>>>> 6f4960a685e2a3d22edf50fec9b07f928c3258fc
 using namespace std;
 
 int main(){
@@ -41,6 +44,7 @@ int main(){
     // - .insert(location , iterator , iterator) ...for range of values
     // - .insert(location , no of copies , value)
 
+<<<<<<< HEAD
     // vector <int>v3 ; 
     // v3.insert(v3.begin() , 100);
     // v3.insert(v3.begin()+1,2,200);
@@ -136,6 +140,19 @@ int main(){
     // pq.size(); // 2
 
     
+=======
+    vector <int>v3 ; 
+    v3.insert(v3.begin() , 100);
+    v3.insert(v3.begin()+1,2,200);
+
+    // Copy one vector into another =
+    vector<int>copy (2 , 300);
+    v3.insert(v3.begin()+3 , copy.begin(), copy.end());
+    for (auto i3 : v3){
+        cout<<i3<<" ";
+    }
+
+>>>>>>> 6f4960a685e2a3d22edf50fec9b07f928c3258fc
 
 
 }
