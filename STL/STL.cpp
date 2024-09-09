@@ -1,10 +1,11 @@
 #include<iostream>
 #include<vector>
 #include<iterator>
-<<<<<<< HEAD
 #include<list>
-=======
->>>>>>> 6f4960a685e2a3d22edf50fec9b07f928c3258fc
+#include<set>
+#include<map>
+
+
 using namespace std;
 
 int main(){
@@ -44,7 +45,6 @@ int main(){
     // - .insert(location , iterator , iterator) ...for range of values
     // - .insert(location , no of copies , value)
 
-<<<<<<< HEAD
     // vector <int>v3 ; 
     // v3.insert(v3.begin() , 100);
     // v3.insert(v3.begin()+1,2,200);
@@ -139,20 +139,76 @@ int main(){
     // pq.empty(); // false
     // pq.size(); // 2
 
-    
-=======
-    vector <int>v3 ; 
-    v3.insert(v3.begin() , 100);
-    v3.insert(v3.begin()+1,2,200);
+    //* Set = 
+    // - Set is a container that stores unique elements following a specific order.
+    // - It provides efficient insertion, deletion, and lookup operations with O(log n) complexity.
+    // - It is implemented using a balanced binary search tree (typically Red-Black Tree).
+    // - Unique Elements: No duplicate values are allowed.
+    // - Ordered: Elements are stored in a sorted manner.
+    // - Balanced Tree: Operations like insertion, deletion, and search take O(log n) time.
+    // - Types of set : set = ordered set , multiset = ordered set that allows duplicate values , unordered_set: Unordered set, implemented using a hash table, offers average-case O(1) complexity for insertions, deletions, and lookups, unordered_multiset: Unordered set that allows duplicate elements.
+    // CODE = 
 
-    // Copy one vector into another =
-    vector<int>copy (2 , 300);
-    v3.insert(v3.begin()+3 , copy.begin(), copy.end());
-    for (auto i3 : v3){
-        cout<<i3<<" ";
+    // set<int>s1;
+    // s1.insert(1);
+    // s1.insert(2 );
+    // s1.insert(2 );
+    // s1 = {3,4,5,6,4};
+    // for(auto setit = s1.begin() ; setit !=s1.end();++setit){
+    //          cout<<*setit<<" ";
+    //     }
+    // auto setit2 = s1.find(3);
+    // s1.erase(5);  // Erase element by value
+    // s1.erase(s1.begin());  // Erase by iterator
+    // s1.erase(s1.begin(), s1.end());  // Erase range
+    // s1.clear();  // Clear the entire set
+    // auto it = s1.find(5);  // Returns iterator to element or s1.end() if not found
+    // bool exists = s1.count(5);  // Returns 1 if element exists, 0 otherwise
+
+    //* MAP =
+
+    // - Map is a container that stores elements in key-value pairs.
+    // - Each key is unique, and the map maintains the order of keys.
+    // - Implemented using a balanced binary search tree (typically Red-Black Tree).
+    // Key Features = Unique Keys, Ordered: Elements are sorted based on the keys.
+    // Balanced Tree: Operations like insertion, deletion, and search take O(log n) time.
+    // Types of Maps = 
+    // map: Ordered map.
+    // multimap: Ordered map that allows duplicate keys.
+    // unordered_map: Unordered map, implemented using a hash table, offers average-case O(1) complexity for insertions, deletions, and lookups.
+    // unordered_multimap: Unordered map that allows duplicate keys.
+
+    // code = 
+
+    map<int,string> m;
+
+    // Insertion
+    m.insert({1, "one"});
+    m[2] = "two";
+    m.insert({3, "three"});
+
+    // Access
+    cout << "Value for key 2: " << m[2] << "\n";
+
+    // Traversal
+    for (const auto& [key, value] : m) {
+    cout << key << ": " << value << "\n";
     }
 
->>>>>>> 6f4960a685e2a3d22edf50fec9b07f928c3258fc
+    // Search
+    if (m.find(3) != m.end()) {
+        cout << "Element with key 3 found\n";
+    }
+
+    // Deletion
+    m.erase(2);
+
+    // Size
+    cout << "Size of map: " << m.size() << "\n";
+
+    return 0;
+}
+
 
 
 }
