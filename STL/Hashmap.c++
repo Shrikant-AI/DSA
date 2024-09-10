@@ -24,7 +24,7 @@ int main(){
     while(q--){
         int number;
         cin>>number;
-        cout<<hash[number]<<endl;
+        cout<<number<<" occurs "<<hash[number]<<" times."<<endl;
 
     }
 }
