@@ -12,11 +12,7 @@ int  linear(int arr[],int n,int target){
     if(!found){
         cout<<"Element is not present in array"<<endl;
     }
-    
-
 }
-
-
 int main(){
     int arr[]={4,8,1,6,1,7};
     int n = sizeof(arr)/sizeof(arr[1]);

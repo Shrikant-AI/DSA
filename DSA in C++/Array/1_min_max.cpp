@@ -1,3 +1,5 @@
+//* WAC to return min and max element from an array.
+
 #include<iostream>
 #include<climits>
 using namespace std;
