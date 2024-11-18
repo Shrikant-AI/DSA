@@ -33,8 +33,8 @@ void uniqueUsingForLoop(int arr[],int n){
 }
 
 int main(){
-    int n = 6;
-    int arr[n] = {1, 1, 5 , 2, 2, 4};
+    int n=6;
+    int arr[6] = {1, 1, 5 , 2, 2, 4};
     
     // cout<<"unique elem is: "<<singleUnique(arr , n);
     uniqueUsingForLoop(arr,n);
